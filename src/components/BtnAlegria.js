@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { VStack, Text, Code, Box } from '@chakra-ui/layout';
-
-let txt = ['caca', 'chota', 'pedo'];
+const msjArr = ['hey', 'vos ', 'cacota'];
 
 const BtnAlegria = () => {
   const [contador, setContador] = useState(0);
-  const [mensajes, setMensajes] = useState('❔');
-
+  const [mensaje, setMensaje] = useState('');
+  msjArr.forEach((e, i) => console.log(e[i]));
   return (
     <VStack spacing={8}>
       <button
@@ -29,7 +28,7 @@ const BtnAlegria = () => {
         bg="white"
         textAlign="center"
       >
-        {mensajes}
+        {mensaje}
       </Box>
     </VStack>
   );
