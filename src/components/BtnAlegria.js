@@ -1,11 +1,25 @@
 import React, { useState } from 'react';
-import { VStack, Text, Code, Box } from '@chakra-ui/layout';
-const msjArr = ['hey', 'vos ', 'cacota'];
+import { VStack, Text, Code } from '@chakra-ui/layout';
+import { Button } from '@chakra-ui/button';
 
 const BtnAlegria = () => {
   const [contador, setContador] = useState(0);
-  const [mensaje, setMensaje] = useState('');
-  msjArr.forEach((e, i) => console.log(e[i]));
+  const [index, setIndex] = useState(0);
+  const mensaje = [
+    '',
+    'Hey',
+    '¡HEY!',
+    'Vos',
+    'SI, VOS ',
+    'No te dijeron "¿CON RESPONSABILIDAD?',
+    '¿Siempre hacés lo que NO te dicen que hagas?',
+    'Bueno...',
+    'Esto parece que viene para largo.',
+    'Estemmmm....',
+    'Ya estaría...',
+    { contador },
+  ];
+
   return (
     <VStack spacing={8}>
       <button
@@ -19,17 +33,17 @@ const BtnAlegria = () => {
         Sos un toque más feliz hace <Code fontSize="xl">{contador}</Code>
         clicks.
       </Text>
-      <Box
-        w="100px"
-        h="50px"
+      <Text> Este es un botón de conciencia. Clikeá con responsabilidad</Text>
+      <Button
         boxShadow="md"
         p="6"
         rounded="md"
         bg="white"
         textAlign="center"
+        onClick={() => setIndex(index + 1)}
       >
-        {mensaje}
-      </Box>
+        {mensaje[index]}
+      </Button>
     </VStack>
   );
 };
