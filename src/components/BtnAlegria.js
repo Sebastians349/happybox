@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
 import { VStack, Text, Code } from '@chakra-ui/layout';
 import BtnConciencia from './BtnConciencia';
+import { Button } from '@chakra-ui/button';
 
 const BtnAlegria = () => {
   const [contador, setContador] = useState(0);
-  console.log('anda');
 
   return (
     <VStack spacing={8}>
-      <button
+      <Button
         onClick={() => setContador(contador + 1)}
         colorScheme="teal"
-        variant="outline"
+        variant="ghost"
+        h="auto"
+        p={2}
+        fontSize="9xl"
       >
         🎉
-      </button>
-      <Text>
+      </Button>
+      <Text fontWeight="semibold">
         Sos un toque más feliz hace <Code fontSize="xl">{contador}</Code>{' '}
         clicks.
       </Text>
