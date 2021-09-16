@@ -3,11 +3,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <HStack
-      borderBottom="1px"
-      borderColor="red.400
-  600"
-    >
+    <HStack>
       <Box></Box>
     </HStack>
   );

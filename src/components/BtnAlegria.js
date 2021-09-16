@@ -7,7 +7,17 @@ import confetti from 'canvas-confetti';
 const BtnAlegria = () => {
   const [contador, setContador] = useState(0);
 
-  confetti();
+  // Use el increible canvas confetti , ==> https://github.com/catdad/canvas-confetti
+
+  function randomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  confetti({
+    angle: randomInRange(55, 125),
+    spread: randomInRange(50, 70),
+    particleCount: randomInRange(50, 100),
+    origin: { y: 0.6 },
+  });
 
   const corneta = new Audio('https://bigsoundbank.com/UPLOAD/mp3/0241.mp3');
   //  a mi me causa mas gracia , tengo 5 años...
