@@ -3,6 +3,7 @@ import { VStack, Text, Code } from '@chakra-ui/layout';
 import BtnConciencia from './BtnConciencia';
 import { Button } from '@chakra-ui/button';
 import confetti from 'canvas-confetti';
+import { Tooltip } from '@chakra-ui/react';
 
 const BtnAlegria = () => {
   const [contador, setContador] = useState(0);
@@ -26,19 +27,30 @@ const BtnAlegria = () => {
 
   return (
     <VStack spacing={8}>
-      <Button
-        onClick={() => setContador(contador + 1)}
-        colorScheme="teal"
-        variant="ghost"
-        h="auto"
-        p={2}
-        fontSize="9xl"
+      <Tooltip
+        label="CLICKEAME, NO TE RESISTAS"
+        borderRadius="md"
+        fontWeight="light"
+        placement="top"
       >
-        🎉
-      </Button>
+        <Button
+          onClick={() => setContador(contador + 1)}
+          colorScheme="teal"
+          boxShadow="dark-lg"
+          variant="ghost"
+          h="auto"
+          p={4}
+          fontSize="9xl"
+        >
+          🎉
+        </Button>
+      </Tooltip>
       <Text fontSize="x-large" textAlign="center" fontWeight="semibold">
-        Sos un toque más feliz hace <Code fontSize="xl">{contador}</Code>{' '}
-        clicks.
+        Sos{' '}
+        <Code fontSize="xl" color="blue" colorScheme="messenger">
+          {contador}
+        </Code>{' '}
+        veces más feliz.
       </Text>
       <BtnConciencia contador={contador} />
     </VStack>
