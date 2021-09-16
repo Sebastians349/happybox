@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Button } from '@chakra-ui/button';
-
+import { VStack, Text } from '@chakra-ui/layout';
 const BtnConciencia = props => {
   const [index, setIndex] = useState(0);
   const mensaje = [
-    'Este es un botón de conciencia. Clikeá con responsabilidad',
+    'Este botón llama a tu conciencia.',
+    'Clikeá con responsabilidad',
     'RESPONSABILIDAD',
     '...',
     'Hey',
@@ -22,11 +23,7 @@ const BtnConciencia = props => {
     '¿No te alcanzaba con ser feliz, no?',
     '¿Como son los humanEs, eh?',
     '¿Tenías que clickear acá también?',
-    'Lo bueno que no sos curios@... ',
-    'o curiosX... ',
-    'o curiosE... ',
-    'o curiosa/o...',
-    'así abarcamos todo el lenguaje, ¿no?',
+    // CHECK
     'Ahora estamos aca ambos...',
     'MATANDO LA PRODUCTIVIDAD.',
     'Tu empleador no debe estar feliz.',
@@ -145,15 +142,27 @@ const BtnConciencia = props => {
     '¿Objeto inanimado?',
   ];
   return (
-    <Button
-      boxShadow="md"
-      p="6"
-      rounded="md"
-      textAlign="center"
-      onClick={() => setIndex(index + 1)}
-    >
-      {mensaje[index]}
-    </Button>
+    <VStack>
+      <Button
+        marginTop={25}
+        variant="outline"
+        colorScheme="teal"
+        onClick={() => setIndex(index + 1)}
+      >
+        ❔
+      </Button>
+      <Text
+        boxShadow="md"
+        p="3"
+        rounded="md"
+        textAlign="center"
+        // alignContent="center"
+        fontSize="md"
+        fontWeight="medium"
+      >
+        {mensaje[index]}
+      </Text>
+    </VStack>
   );
 };
 

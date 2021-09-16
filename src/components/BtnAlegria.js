@@ -18,7 +18,7 @@ const BtnAlegria = () => {
       >
         🎉
       </Button>
-      <Text fontWeight="semibold">
+      <Text fontSize="x-large" textAlign="center" fontWeight="semibold">
         Sos un toque más feliz hace <Code fontSize="xl">{contador}</Code>{' '}
         clicks.
       </Text>
