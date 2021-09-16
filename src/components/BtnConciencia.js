@@ -4,6 +4,7 @@ import { VStack, Text } from '@chakra-ui/layout';
 const BtnConciencia = props => {
   const [index, setIndex] = useState(0);
   const mensaje = [
+    '',
     'Este botón llama a tu conciencia.',
     'Clikeá con responsabilidad',
     'RESPONSABILIDAD',

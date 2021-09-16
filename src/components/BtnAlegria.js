@@ -2,9 +2,16 @@ import React, { useState } from 'react';
 import { VStack, Text, Code } from '@chakra-ui/layout';
 import BtnConciencia from './BtnConciencia';
 import { Button } from '@chakra-ui/button';
+import confetti from 'canvas-confetti';
 
 const BtnAlegria = () => {
   const [contador, setContador] = useState(0);
+
+  // confetti({
+  //   particleCount: 150,
+  // });
+
+  confetti();
 
   return (
     <VStack spacing={8}>
