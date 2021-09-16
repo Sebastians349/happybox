@@ -7,11 +7,12 @@ import confetti from 'canvas-confetti';
 const BtnAlegria = () => {
   const [contador, setContador] = useState(0);
 
-  // confetti({
-  //   particleCount: 150,
-  // });
-
   confetti();
+
+  const corneta = new Audio('https://bigsoundbank.com/UPLOAD/mp3/0241.mp3');
+  //  a mi me causa mas gracia , tengo 5 años...
+
+  corneta.play();
 
   return (
     <VStack spacing={8}>
