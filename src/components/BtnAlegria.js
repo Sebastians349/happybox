@@ -35,8 +35,7 @@ const BtnAlegria = () => {
       >
         <Button
           onClick={() => setContador(contador + 1)}
-          colorScheme="teal"
-          boxShadow="dark-lg"
+          boxShadow="xl"
           variant="ghost"
           h="auto"
           p={4}

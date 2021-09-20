@@ -9,11 +9,11 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Flex
-        justify="space-around"
+        justify="space-between"
         boxShadow="xs"
         p="2"
         borderBottom="1px"
-        borderBottomColor="yellow.400"
+        borderBottomColor="yellow.200"
       >
         <Header />
         <ColorModeSwitcher justifySelf="flex-end" />

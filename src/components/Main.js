@@ -4,7 +4,7 @@ import BtnAlegria from './BtnAlegria';
 
 const Main = () => {
   return (
-    <Stack p={55}>
+    <Stack p={55} bgGradient="#fafafa">
       <BtnAlegria />
     </Stack>
   );

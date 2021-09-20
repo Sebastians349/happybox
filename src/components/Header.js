@@ -1,10 +1,11 @@
-import { Box, HStack } from '@chakra-ui/layout';
+import { HStack } from '@chakra-ui/layout';
 import React from 'react';
+import LogoHeader from './LogoHeader';
 
 const Header = () => {
   return (
     <HStack>
-      <Box></Box>
+      <LogoHeader />
     </HStack>
   );
 };
