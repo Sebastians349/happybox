@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import { Button } from '@chakra-ui/button';
 import { VStack, Text } from '@chakra-ui/layout';
+import { keyframes, usePrefersReducedMotion } from '@chakra-ui/react';
+const spin = keyframes`
+  from { transform: scale(0.1); }
+  to { transform: scale(1.5); }
+`;
+
 const BtnConciencia = props => {
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const animation = prefersReducedMotion
+    ? undefined
+    : `${spin} infinite 5s linear`;
   const [index, setIndex] = useState(0);
   const mensaje = [
     '',
@@ -37,7 +47,7 @@ const BtnConciencia = props => {
     '¿PAVADAPP?',
     '(dad-jokes)',
     'Está repleta de ellos el botón',
-    'y de papel picado...',
+    'y de papel picado tu navegador...',
     'Creéme, no querés saber ',
     'A esta altura te preguntarás si son mensajes al azar...',
     'O si de verdad soy un bot...',
@@ -191,10 +201,12 @@ const BtnConciencia = props => {
   return (
     <VStack>
       <Button
-        marginTop={25}
+        margin={5}
+        rounded="md"
         variant="outline"
         colorScheme="teal"
         onClick={() => setIndex(index + 1)}
+        animation={animation}
       >
         ❔
       </Button>
