@@ -1,16 +1,23 @@
-import { Flex, Text } from '@chakra-ui/layout';
+import { Stack } from '@chakra-ui/layout';
 import React from 'react';
+import Cafecito from './Cafecito';
+import Seba from './Seba';
 
 const Footer = () => {
   return (
-    <Flex
-      justifyContent="center"
-      alignItems="center"
-      borderTop="1px"
-      borderTopColor="yellow.400"
+    <Stack
+      direction={['column-reverse', 'row']}
+      mt="4"
+      justify="space-between"
+      boxShadow="dark-lg"
+      p="1"
+      rounded="md"
+      align="center"
     >
-      <Text textAlign="center">esto es un footer</Text>
-    </Flex>
+      <Seba />
+      <Cafecito />
+      <Seba />
+    </Stack>
   );
 };
 

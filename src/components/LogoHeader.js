@@ -7,7 +7,7 @@ const LogoHeader = () => {
     <HStack>
       <Icon w={6} h={6} as={GiClick} />{' '}
       <Heading size="sm" textTransform="uppercase">
-        Botón De Felicidad
+        Felicidad instantánea
       </Heading>
     </HStack>
   );
