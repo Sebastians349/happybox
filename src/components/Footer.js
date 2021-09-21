@@ -2,6 +2,7 @@ import { Stack } from '@chakra-ui/layout';
 import React from 'react';
 import Cafecito from './Cafecito';
 import Seba from './Seba';
+import SocialsList from './SocialsList';
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
       rounded="md"
       align="center"
     >
-      <Seba />
+      <SocialsList />
       <Cafecito />
       <Seba />
     </Stack>
