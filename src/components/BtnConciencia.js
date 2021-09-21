@@ -123,6 +123,16 @@ const BtnConciencia = props => {
     '¡Dale a esa corneta de papel picado!',
     '¡Ah!😁',
     '¿Que bien se siente no?',
+    '¿Ya hiciste la seguidilla?',
+    'Esa que hacen uds, cuando un equipo gana',
+    'O se graduan',
+    'O se casan (cada vez menos)',
+    'Vos sabés',
+    'ESA, SI',
+    'PÉ PÉ PÉ, PÉPÉPÉ 🎉',
+    'Traducido sería...',
+    'click, click, click',
+    'clickclickclick(todorapidito)',
     'Algo te tiene que haber generado...',
     'Alguna sonrisa te debe haber sacado',
     'Ansiedad para saber como termina, al menos.',
@@ -133,15 +143,16 @@ const BtnConciencia = props => {
     'El reggaeton está muy flojo de papeles',
     '¿Por qué la gente no usa los giros para doblar?',
     '¿Por qué la gente no usa las balizas para estacionar?',
+    '¿Por qúe bajamos el volúmen para estacionar?',
     '¿Por qué los perros pequeños ladran tanto?',
-    '¿Por qué los perros pequeños ladran tanto?',
-    'O. Ya me aburrí pero ahora quiero saber como termina',
+    'O. Ya me aburrí, dale... ',
+    'Ahora quiero saber como termina',
     'Y así podemos pasarnos todo el día...',
     'Volviendo al tema anterior',
     'Ya sabías que venía el mangazo. ¿No?',
     'Depende',
     'Por ahí, que se yo.',
-    'Te sentis generosE hoy',
+    'Te levantaste generosE hoy',
     'Y ya que llegaste hasta acá.',
     'Y no estás insultando al creador.',
     'Quizás...',
@@ -176,11 +187,11 @@ const BtnConciencia = props => {
     '???',
     // CHECKFIX
     'No sabés...',
-    'No sabés...',
     'Es un buen pibe.',
     'Bueno, pibe...',
-    'En realidad se siente como Ginobili',
+    'Viste como le dicen a Ginobili',
     '"El pibe de 40"',
+    'Igual.',
     'Pero sin los anillos de la Nba...',
     'Ni la altura',
     '?????',
@@ -203,12 +214,13 @@ const BtnConciencia = props => {
       <Button
         margin={5}
         rounded="md"
-        variant="outline"
+        variant="ghost"
         colorScheme="teal"
         onClick={() => setIndex(index + 1)}
         animation={animation}
+        textColor="red.300"
       >
-        ❔
+        ❓
       </Button>
       <Text
         boxShadow="md"
@@ -216,7 +228,7 @@ const BtnConciencia = props => {
         rounded="md"
         textAlign="center"
         // alignContent="center"
-        fontSize="md"
+        fontSize="lg"
         fontWeight="medium"
       >
         {mensaje[index]}
