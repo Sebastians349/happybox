@@ -44,7 +44,7 @@ const BtnAlegria = () => {
           🎉
         </Button>
       </Tooltip>
-      <Text fontSize="x-large" textAlign="center" fontWeight="semibold">
+      <Text fontSize="x-large" textAlign="center" fontWeight="bold">
         Sos{' '}
         <Code fontSize="xl" color="blue" colorScheme="messenger">
           {contador}

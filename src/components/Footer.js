@@ -7,12 +7,12 @@ import SocialsList from './SocialsList';
 const Footer = () => {
   return (
     <Stack
-      direction={['column-reverse', 'row']}
-      mt="4"
+      direction={['column', 'row']}
       justify="space-between"
-      boxShadow="dark-lg"
+      // boxShadow="dark-lg"
+      borderTop="1px"
+      borderTopColor="yellow.200"
       p="1"
-      rounded="md"
       align="center"
     >
       <SocialsList />

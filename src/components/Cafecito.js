@@ -7,7 +7,7 @@ const Cafecito = () => {
       <Stack direction={['column', 'row']}>
         <Center>
           <Text fontSize="md" fontWeight="medium" textAlign="center">
-            ¿Sos un toque más feliz? Considerá invitarme un
+            ¿Sos un toque más feliz? Considerá invitarme un 👉
           </Text>
           <Link href="https://cafecito.app/sebote">
             <Image

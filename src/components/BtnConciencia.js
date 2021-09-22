@@ -218,18 +218,16 @@ const BtnConciencia = props => {
         colorScheme="teal"
         onClick={() => setIndex(index + 1)}
         animation={animation}
-        textColor="red.300"
       >
         ❓
       </Button>
       <Text
-        boxShadow="md"
+        // boxShadow="xl"
         p="3"
-        rounded="md"
         textAlign="center"
         // alignContent="center"
         fontSize="lg"
-        fontWeight="medium"
+        fontWeight="semibold"
       >
         {mensaje[index]}
       </Text>
