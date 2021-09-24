@@ -9,7 +9,7 @@ const Cafecito = () => {
           <Text fontSize="md" fontWeight="medium" textAlign="center">
             ¿Sos un toque más feliz? Considerá invitarme un 👉
           </Text>
-          <Link href="https://cafecito.app/sebote">
+          <Link href="https://cafecito.app/sebote" isExternal>
             <Image
               src="cafecito.png"
               borderRadius="5px"
